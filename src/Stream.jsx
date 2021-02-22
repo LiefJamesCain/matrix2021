@@ -1,6 +1,7 @@
 const Stream = () => {
   return (
-    <span style={{
+    <div style={{
+      fontFamily: 'modernWakandan',
       color: '#664eae',
       writingMode: 'vertical-rl',
       textOrientation: 'upright',
@@ -8,7 +9,11 @@ const Stream = () => {
       userSelect: 'none',
       textShadow: '0px 0px 8px rgba(102, 78, 174, 0.8)',
       fontSize: 50
-    }}>test</span>
+    }}>
+      {'test'.split().map(char => (
+        <span style={{marginTop: -12}}>{char}</span>
+      ))}
+    </div>
   )
 }
 
