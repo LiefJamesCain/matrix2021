@@ -16,8 +16,8 @@ const generateStream = () => {
 };
 
 const Stream = () => {
-  const raindrop = generateStream();
-  const lief = "liefjamescain";
+  let raindrop = generateStream();
+  let lief = "liefjamescain";
   return (
     <div
       style={{
@@ -48,10 +48,12 @@ const Stream = () => {
         <span
           key={char.toString()}
           style={{
-            color: index === lief.length - 1 ? "#fff" : undefined,
+            color: index === lief.length - 1 ? '#fff' : undefined,
             // opacity: index < 6 ? 0.1 + index * 0.15 : 1,
             textShadow:
-              index === lief.length - 1 ? "0px 0px 20px rgba(255, 255, 255, 1)" : undefined,
+              index === lief.length - 1
+                ? '0px 0px 20px rgba(255, 255, 255, 1)'
+                : undefined,
             marginTop: -12,
           }}
         >
