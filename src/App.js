@@ -1,9 +1,9 @@
-import Matrix from './Matrix';
+import WakandanMatrix from './WakandanMatrix';
 import './App.css';
 
 function App() {
   return (
-    <Matrix/>
+    <WakandanMatrix/>
   );
 }
 
