@@ -28,7 +28,7 @@ const Stream = () => {
         whiteSpace: "nowrap",
         userSelect: "none",
         textShadow: "0px 0px 8px rgba(102, 78, 174, 0.8)",
-        fontSize: 50,
+        fontSize: 42,
       }}
     >
       {/* {raindrop.map((char, index) => (
