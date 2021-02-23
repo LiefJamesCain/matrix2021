@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import useInterval from "@use-it/interval";
+import React, { useEffect, useRef, useState } from 'react';
+import useInterval from '@use-it/interval';
 
 const valid_chars = `abcdefghijklmnopqrstuvwxyz0123456789$+-*/="'#_(),.;:?!\\|{}<>[]^~`;
 const mutation_odds = 0.02;
@@ -51,7 +51,6 @@ const RainStream = (props) => {
 
   useInterval(() => {
     if (!props.height) return;
-
     if (!intervalDelay) return;
 
     // if stream is off the screen, reset it after timeout
@@ -75,16 +74,16 @@ const RainStream = (props) => {
   return (
     <div
       style={{
-        fontFamily: "modernWakandan",
-        color: "#664eae",
-        writingMode: "vertical-rl",
-        textOrientation: "upright",
-        userSelect: "none",
-        whiteSpace: "nowrap",
+        fontFamily: 'modernWakandan',
+        color: '#664eae',
+        writingMode: 'vertical-rl',
+        textOrientation: 'upright',
+        userSelect: 'none',
+        whiteSpace: 'nowrap',
         marginTop: topPadding,
         marginLeft: -15,
         marginRight: -15,
-        textShadow: "0px 0px 8px rgba(102, 78, 174, 0.8)",
+        textShadow: '0px 0px 8px rgba(102, 78, 174, 0.8)',
         fontSize: 42,
       }}
     >
@@ -95,10 +94,10 @@ const RainStream = (props) => {
             // reduce opacity for last few chars
             opacity: index < 6 ? 0.1 + index * 0.15 : 1,
             // first char is white
-            color: index === stream.length - 1 ? "#fff" : undefined,
+            color: index === stream.length - 1 ? '#fff' : undefined,
             textShadow:
               index === stream.length - 1
-                ? "0px 0px 20px rgba(255, 255, 255, 1)"
+                ? '0px 0px 20px rgba(255, 255, 255, 1)'
                 : undefined,
           }}
         >
@@ -126,16 +125,16 @@ const WakandanMatrix = (props) => {
   return (
     <div
       style={{
-        background: "black",
-        position: "fixed",
+        background: 'black',
+        position: 'fixed',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
-        overflow: "ignore",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
+        overflow: 'ignore',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
       }}
       ref={containerRef}
     >
