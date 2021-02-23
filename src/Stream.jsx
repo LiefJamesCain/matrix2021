@@ -1,19 +1,13 @@
-const VALID_CHARS = `abcdefghijklmnopqrstuvwxyz0123456789$+-*/=%"'#&_(),.;:?!\\|{}<>[]^~`;
-// const VALID_CHARS = `abcdefghijklmnopqrstuvwxyz0123456789`;
-
-const MIN_STREAM_SIZE = 15;
-const MAX_STREAM_SIZE = 50;
+let validChars = `abcdefghijklmnopqrstuvwxyz0123456789$+-*/=%"'#&_(),.;:?!\\|{}<>[]^~`;
+let minStreamSize = 15;
+let maxStreamSize = 50;
 
 const getRandomCharInRange = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-const getRandomChar = () => {
-  VALID_CHARS.charAt(Math.floor(Math.random() * VALID_CHARS.length));
-}
+const getRandomChar = () => validChars.charAt(Math.floor(Math.random() * validChars.length));
 
 const generateStream = () => {
-  new Array(getRandomCharInRange(MIN_STREAM_SIZE, MAX_STREAM_SIZE))
-    .fill()
-    .map(_ => getRandomChar());
+  new Array(getRandomCharInRange(minStreamSize, maxStreamSize)).fill().map(_ => getRandomChar());
 }
 
 const Stream = () => {
@@ -28,9 +22,8 @@ const Stream = () => {
       textShadow: '0px 0px 8px rgba(102, 78, 174, 0.8)',
       fontSize: 50
     }}>
-      {'cain'.split().map(char => (
-        <span style={{marginTop: -12}}>{char}</span>
-      ))}
+      {/* {generateStream().map(char => (<span key={char.toString()}>{char}</span>))} */}
+      {'lief'.split().map(char => (<span key={char.toString()} style={{marginTop: -12}}>{char}</span>))}
     </div>
   )
 }
