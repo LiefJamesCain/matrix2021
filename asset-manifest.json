@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/matrix2021/static/css/main.8e52f72c.chunk.css",
+    "main.js": "/matrix2021/static/js/main.c3997f9e.chunk.js",
+    "main.js.map": "/matrix2021/static/js/main.c3997f9e.chunk.js.map",
+    "runtime-main.js": "/matrix2021/static/js/runtime-main.c2239180.js",
+    "runtime-main.js.map": "/matrix2021/static/js/runtime-main.c2239180.js.map",
+    "static/js/2.797ed006.chunk.js": "/matrix2021/static/js/2.797ed006.chunk.js",
+    "static/js/2.797ed006.chunk.js.map": "/matrix2021/static/js/2.797ed006.chunk.js.map",
+    "static/js/3.78b9e99c.chunk.js": "/matrix2021/static/js/3.78b9e99c.chunk.js",
+    "static/js/3.78b9e99c.chunk.js.map": "/matrix2021/static/js/3.78b9e99c.chunk.js.map",
+    "index.html": "/matrix2021/index.html",
+    "static/css/main.8e52f72c.chunk.css.map": "/matrix2021/static/css/main.8e52f72c.chunk.css.map",
+    "static/js/2.797ed006.chunk.js.LICENSE.txt": "/matrix2021/static/js/2.797ed006.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/matrix2021/static/media/ModernWakandan-Bold.181856c4.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2239180.js",
+    "static/js/2.797ed006.chunk.js",
+    "static/css/main.8e52f72c.chunk.css",
+    "static/js/main.c3997f9e.chunk.js"
+  ]
+}
